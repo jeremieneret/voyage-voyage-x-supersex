@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap");
 
 body,
-.menu {
+.menu,
+#root,
+.about {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   height: 100vh;
   background-color: #000000;
-  color: #ff00ff;
-  font-family: "Teachers", sans-serif;
+  color: #ff20ff;
   text-align: center;
   font-optical-sizing: auto;
   font-synthesis: none;
@@ -21,12 +22,68 @@ body,
   scroll-behavior: smooth;
   flex-direction: column;
   margin: 0;
+  font-family: "Teachers", sans-serif;
+  text-shadow: 1px 1px 2px black;
 }
 
-h1 {
-  font-size: 11em;
-  font-weight: 800;
-  letter-spacing: -0.5rem;
+h1,
+h2,
+a {
+  font-family: "Kalnia", sans-serif;
+  font-weight: 700;
+  color: #fcfcdf;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+span {
+  white-space: nowrap;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  .home-text {
+    padding: 32px;
+  }
+  h1 {
+    font-size: 11em;
+    font-weight: 800;
+    letter-spacing: -0.5rem;
+    font-family: "Teachers", sans-serif;
+    color: #ff20ff;
+  }
+}
+
+.credits {
+  background: url("src/assets/credits_background.png");
+  background-position: right;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.about {
+  background: url("src/assets/about_background.png");
+  background-position: center;
+  background-size: cover;
+  p {
+    font-size: 24px;
+  }
+}
+
+.footer {
+  height: 50px;
 }
 
 li {
@@ -35,13 +92,11 @@ li {
 
 a {
   margin: 0;
-  font-size: 6em;
   text-decoration: none;
   cursor: pointer;
   transition: all 300ms ease;
-  color: #fcfcdf;
   &:hover {
-    color: #ff00ff;
+    color: #ff20ff;
   }
 }
 
@@ -57,15 +112,13 @@ a {
   background: url("src/assets/menu_background.jpeg");
   background-position: center;
   background-size: cover;
-  border-right: solid 32px #ff00ff;
+  border-right: solid 32px #ff20ff;
   position: absolute;
   top: 0;
   left: -110vw;
   // z-index: 2;
   transition: all 1s ease-in-out;
   // backdrop-filter: blur(100px);
-  font-family: "Kalnia", sans-serif;
-  font-weight: 700;
 
   &.open {
     left: 0;
@@ -93,21 +146,68 @@ iframe {
   width: 100vw;
 }
 
-@media (max-width: 1290px) {
-  h1 {
+.text {
+  padding: 0 10vw;
+}
+
+@media (min-width: 1418px) {
+  h1,
+  .home h1 {
+    font-size: 112px;
+  }
+  a {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 1418px) {
+  h1,
+  .home h1 {
     font-size: 7em;
     letter-spacing: normal;
+  }
+  a {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 1200px) {
+  a {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 1000px) {
+  a {
+    font-size: 4em;
+  }
+  .menu {
+    border-right: solid 24px #ff20ff;
   }
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 5.4em;
+  h1,
+  .home h1 {
+    font-size: 4em;
+  }
+  a {
+    font-size: 3em;
+  }
+  .menu {
+    border-right: solid 12px #ff20ff;
   }
 }
 
 @media (max-width: 450px) {
-  h1 {
-    font-size: 4em;
+  h1,
+  .home h1 {
+    font-size: 3em;
+  }
+  a {
+    font-size: 2em;
+  }
+  .menu {
+    border-right: solid 2px #ff20ff;
   }
 }

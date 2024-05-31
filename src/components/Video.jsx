@@ -10,7 +10,8 @@ export default function Video() {
         playing
         width='100vw'
         height='100vh'
-        allowfullscreen
+        allowFullScreen
+        // requestFullscreen
       />
     </div>
   </>
