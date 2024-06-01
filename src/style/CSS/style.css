@@ -75,7 +75,7 @@ ul {
 }
 
 .about {
-  background: url("src/assets/9AE49FF3-7C98-4A4F-8889-B4E4F87BE520_1_201_a.jpeg");
+  background: url("src/assets/about_background.jpeg");
   background-position: center;
   background-size: cover;
 }
