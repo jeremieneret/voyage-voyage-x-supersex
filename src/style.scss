@@ -70,7 +70,7 @@ ul {
 }
 
 .credits {
-  background: url("src/assets/credits_background.png");
+  background: url("/assets/images/credits_background.png");
   background-position: right;
   background-size: cover;
   height: 100vh;
@@ -78,8 +78,7 @@ ul {
 }
 
 .about {
-  // background: url("src/assets/about_background.png");
-  background: url('src/assets/about_background.jpeg');
+  background: url('/assets/images/about_background.jpeg');
   background-position: center;
   background-size: cover;
   p {
@@ -119,7 +118,7 @@ a {
 }
 
 .menu {
-  background: url("src/assets/menu_background.jpeg");
+  background: url("/assets/images/menu_background.jpeg");
   background-position: center;
   background-size: cover;
   border-right: solid 32px #ff20ff;
@@ -144,7 +143,7 @@ iframe {
 }
 
 .home {
-  background-image: url("src/assets/home_background.png");
+  background-image: url("/assets/images/home_background.png");
   background-position: center;
   background-size: cover;
   display: flex;
