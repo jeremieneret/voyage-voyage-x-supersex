@@ -9,7 +9,6 @@ body,
   height: 100vh;
   display: flex;
   justify-content: center;
-  height: 100vh;
   background-color: #000000;
   color: #ff20ff;
   text-align: center;
@@ -70,14 +69,28 @@ ul {
 }
 
 .credits {
-  background: url("/assets/images/credits_background.png");
-  background-position: right;
-  background-size: cover;
+  height: 110vh;
   width: 100vw;
+  .background, 
+  .text {
+    height: 110vh;
+    width: 100vw;
+  }
+  .background {
+    background: url("/assets/images/credits_background.png");
+    background-attachment: fixed;
+    background-position: right 30% bottom 45%;
+    background-size: cover;
+    position: fixed;
+  }
+  .text {
+    position: relative;
+    padding: 0;
+  }
 }
 
 .about {
-  background: url('/assets/images/about_background.jpeg');
+  background: url("/assets/images/about_background.jpeg");
   background-position: center;
   background-size: cover;
   p {
@@ -114,6 +127,7 @@ a {
   top: 32px;
   left: 32px;
   cursor: pointer;
+  z-index: 3;
 }
 
 .menu {
@@ -164,6 +178,9 @@ iframe {
   a {
     font-size: 6em;
   }
+  .background {
+    filter: blur(10px)
+  }
 }
 
 @media (max-width: 1418px) {
@@ -213,7 +230,9 @@ iframe {
   .burger svg {
     width: 24px;
   }
-  .credits .text {
+
+  .credits {
+    background-position: right 15% bottom 45%;
     h1 {
       margin-top: 1.5em;
     }
@@ -266,5 +285,3 @@ iframe {
     }
   }
 }
-
-

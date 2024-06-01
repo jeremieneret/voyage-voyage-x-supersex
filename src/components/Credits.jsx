@@ -1,6 +1,7 @@
 export default function Credits() {
   return <>
     <div className='credits'>
+      <div className="background" />
       <div className="text">
         <h1>CREDITS</h1>
         <h2>Music</h2>
@@ -18,8 +19,8 @@ export default function Credits() {
         <p>Edit by Jérémie Renoir</p>
         <p>Production: The Apartment Pictures / Grøenlandia / Small Forward Productions</p>
         <p>℗2024 Netflix</p>
+        <div className="footer"></div>
       </div>
-      <div className="footer"></div>
     </div>
   </>
 }
