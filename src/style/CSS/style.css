@@ -66,12 +66,12 @@ ul {
 }
 
 .credits {
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
 }
 .credits .background,
 .credits .text {
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
 }
 .credits .background {
@@ -92,7 +92,6 @@ ul {
   background-size: cover;
 }
 .about p {
-  color: #ff8fff;
   font-size: 26px;
   text-shadow: none;
 }
@@ -136,6 +135,7 @@ a:hover {
   top: 0;
   left: -110vw;
   transition: all 1s ease-in-out;
+  z-index: 3;
 }
 .menu.open {
   left: 0;
@@ -166,6 +166,11 @@ iframe {
   padding: 0 10vw;
 }
 
+@media (min-width: 2000px) {
+  .background {
+    filter: blur(10px);
+  }
+}
 @media (min-width: 1418px) {
   h1,
   .home h1 {
@@ -173,9 +178,6 @@ iframe {
   }
   a {
     font-size: 6em;
-  }
-  .background {
-    filter: blur(10px);
   }
 }
 @media (max-width: 1418px) {
